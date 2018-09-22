@@ -1,0 +1,2 @@
+/** FOX NEWS ISA | 08-29-2018 3:03 PM **/
+!function(){if(!window.CONST_Akamai_GEO){var a=(new Date).getTime();document.write('<script src="//global.fncstatic.com/static/v/all/js/geo.js?cb='+a+'"></script>')}document.write('<script src="//global.fncstatic.com/static/isa/core-app.js?1535569414819"></script>')}();
