@@ -1,5 +1,5 @@
 {%load mainApp_tags %}
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     
@@ -25,26 +25,25 @@
 			    
 
 <title>{{article.title}}</title>
-<meta name="dc.title" content="Pence slams 'disappointing' Obama speech, says he'd take lie detector to prove he didn't write NYT Op-Ed">
-<meta name="description" content="Vice President Mike Pence lambasted Barack Obama's return to the campaign trail in an interview with Fox News Sunday, telling host Chris Wallace that the former president's rhetoric was a very disappointing attempt to paper over a legacy pockmarked by major tax increases and a massive hike in the national debt.">
-<meta name="dc.description" content="Vice President Mike Pence lambasted Barack Obama's return to the campaign trail in an interview with Fox News Sunday, telling host Chris Wallace that the former president's rhetoric was a very disappointing attempt to paper over a legacy pockmarked by major tax increases and a massive hike in the national debt.">
-<meta name="dcterms.abstract" content="Vice President Mike Pence lambasted Barack Obama's return to the campaign trail in an interview with Fox News Sunday, telling host Chris Wallace that the former president's rhetoric was a very disappointing attempt to paper over a legacy pockmarked by major tax increases and a massive hike in the national debt.">
-<meta name="dc.publisher" content="Fox News">
-<meta name="dc.creator" content="Gregg Re">
-<meta name="dc.date" content="2018-09-09">
-<meta name="dcterms.created" scheme="dcterms.ISO8601" content="2018-09-09 12:25:02 EDT">
-<meta name="dcterms.modified" scheme="dcterms.ISO8601" content="2018-09-09 12:25:02 EDT">
-<meta name="dc.source" content="Fox News">
+<meta name="dc.title" content="{{article.content|truncatewords_html:30}}">
+<meta name="description" content="{{article.content|truncatewords_html:30}}">
+<meta name="dc.description" content="{{article.content|truncatewords_html:30}}">
+<meta name="dcterms.abstract" content="{{article.content|truncatewords_html:30}}">
+<meta name="dc.publisher" content="FactsBuzzer">
+<meta name="dc.creator" content="{{article.writer}}">
+<meta name="dc.date" content="{{article.created}}">
+<meta name="dcterms.created" scheme="dcterms.ISO8601" content="{{article.created}}">
+<meta name="dcterms.modified" scheme="dcterms.ISO8601" content="{{article.created}}">
+<meta name="dc.source" content="FactsBuzzer">
 <meta name="dc.identifier" scheme="dcterms.URI" content="4749ff26-1518-4ff0-8533-0656bea57b6d">
 <meta name="dc.subject" content="">
 <meta name="keywords" content="">
-<link rel="shorturl" href="https://fxn.ws/2QgSvnx">
-<link rel="canonical" href="http:https://www.foxnews.com/politics/2018/09/09/pence-slams-disappointing-obama-speech-says-hed-take-lie-detector-to-prove-didnt-write-nyt-op-ed.html">
+<link rel="canonical" href="{{article.get_absolute_url}}">
 
-    <link rel="amphtml" href="http:https://www.foxnews.com/politics/2018/09/09/pence-slams-disappointing-obama-speech-says-hed-take-lie-detector-to-prove-didnt-write-nyt-op-ed.amp.html">
+    <link rel="amphtml" href="{{article.get_absolute_url}}">
 
 
-<link rel="standout" href="http:https://www.foxnews.com/politics/2018/09/09/pence-slams-disappointing-obama-speech-says-hed-take-lie-detector-to-prove-didnt-write-nyt-op-ed.html"> 
+<link rel="standout" href="{{article.get_absolute_url}}"> 
 <meta name="prism.aggregationType" content="subsection">
 <meta name="prism.genre" content="">
 <meta name="dc.type" scheme="dcterms.DCMIType" content="Text.Article">
@@ -54,47 +53,45 @@
 <meta name="prism.subsection2" content="">
 <meta name="prism.subsection3" content="">
 <meta name="prism.subsection4" content="">
-<meta property="og:title" content="Pence slams 'disappointing' Obama speech, says he'd take lie detector to prove he didn't write NYT Op-Ed">
-<meta property="og:description" content="Vice President Mike Pence lambasted Barack Obama's return to the campaign trail in an interview with Fox News Sunday, telling host Chris Wallace that the former president's rhetoric was a very disappointing attempt to paper over a legacy pockmarked by major tax increases and a massive hike in the national debt.">
+<meta property="og:title" content="{{article.title}}">
+<meta property="og:description" content="{{article.content|truncatewords_html:30}}">
 <meta property="og:type" content="article">
 
-    <link rel="image_src" href="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/09/08/0/0/694940094001_5832527777001_5832527502001-vs.jpg?ve=1">
-    <meta property="og:image" content="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/09/08/0/0/694940094001_5832527777001_5832527502001-vs.jpg?ve=1">
+    <link rel="image_src" href="{{article.featured_photo.url}}">
+    <meta property="og:image" content="{{article.featured_photo.url}}">
 
-<meta property="og:url" content="http:https://www.foxnews.com/politics/2018/09/09/pence-slams-disappointing-obama-speech-says-hed-take-lie-detector-to-prove-didnt-write-nyt-op-ed.html">
-<meta property="og:site_name" content="Fox News">
+<meta property="og:url" content="{{article.get_absolute_url}}">
+<meta property="og:site_name" content="FactsBuzzer">
 <meta property="fb:pages" content="15704546335">
 
 
     
     
-        <meta name="classification" content="/FOX NEWS/POLITICS/EXECUTIVE/White House,/FOX NEWS/POLITICS">
+        <meta name="classification" content="{{article.subcategory}}">
     
     
-        <meta name="classification-isa" content="whitehouse,politics">
+        <meta name="classification-isa" content="{{article.subcategory}}">
     
 
 <meta property="fb:app_id" content="113186182048399">
 
 
-<meta name="twitter:site" content="@foxnews">
+<meta name="twitter:site" content="@FactsBuzzer">
 <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="twitter:title" content="Pence slams 'disappointing' Obama speech, says he'd take lie detector to prove he didn't write NYT Op-Ed">
-    <meta name="twitter:description" content="Vice President Mike Pence lambasted Barack Obama's return to the campaign trail in an interview with Fox News Sunday, telling host Chris Wallace that the former president's rhetoric was a very disappointing attempt to paper over a legacy pockmarked by major tax increases and a massive hike in the national debt.">
-    <meta name="twitter:url" content="http:https://www.foxnews.com/politics/2018/09/09/pence-slams-disappointing-obama-speech-says-hed-take-lie-detector-to-prove-didnt-write-nyt-op-ed.html">
+    <meta name="twitter:title" content="{{article.title}}">
+    <meta name="twitter:description" content="{{article.title}}">
+    <meta name="twitter:url" content="{{article.get_absolute_url}}">
     <meta name="twitter:creator" content="@foxnews">
     
-        <meta name="twitter:image" content="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/09/08/0/0/694940094001_5832527777001_5832527502001-vs.jpg?ve=1">
+        <meta name="twitter:image" content="{{article.featured_photo.url}}">
     
 
 <meta name="dc.format" scheme="dcterms.IMT" content="text/html">
 <meta name="dc.language" scheme="dcterms.RFC4646" content="en-US">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="content-language" content="en">
-<meta name="livefyreconfig" collectionMeta="eyJhbGciOiJIUzI1NiJ9.eyJ0YWdzIjoiZm94LW5ld3MscG9saXRpY3MsZm94LW5ld3MscG9saXRpY3MsZXhlY3V0aXZlLHdoaXRlLWhvdXNlIiwidGl0bGUiOiJQZW5jZSBzbGFtcyAnZGlzYXBwb2ludGluZycgT2JhbWEgc3BlZWNoLCBzYXlzIGhlJ2QgdGFrZSBsaWUgZGV0ZWN0b3IgdG8gcHJvdmUgaGUgZGlkbid0IHdyaXRlIE5ZVCBPcC1FZCIsImNoZWNrc3VtIjoiOTEyNWI3MjZjMjFlNDFjMjQyZTM1NWY3MDNmMDU5ZGMiLCJhcnRpY2xlSWQiOiI0NzQ5ZmYyNi0xNTE4LTRmZjAtODUzMy0wNjU2YmVhNTdiNmQiLCJ1cmwiOiJodHRwOi8vd3d3LmZveG5ld3MuY29tL3BvbGl0aWNzLzIwMTgvMDkvMDkvcGVuY2Utc2xhbXMtZGlzYXBwb2ludGluZy1vYmFtYS1zcGVlY2gtc2F5cy1oZWQtdGFrZS1saWUtZGV0ZWN0b3ItdG8tcHJvdmUtZGlkbnQtd3JpdGUtbnl0LW9wLWVkLmh0bWwifQ.Pe0zXiVsCLvITPwCGs6Q4Y1_h2aCZwvNfSH94jJfcGQ" checksum="9125b726c21e41c242e355f703f059dc" articleId="4749ff26-1518-4ff0-8533-0656bea57b6d" siteId="310256" enable="true"/>
-<meta name="livefyreblogconfig" collectionMeta="eyJhbGciOiJIUzI1NiJ9.eyJ0YWdzIjoiZm94LW5ld3MscG9saXRpY3MsZm94LW5ld3MscG9saXRpY3MsZXhlY3V0aXZlLHdoaXRlLWhvdXNlIiwidGl0bGUiOiJQZW5jZSBzbGFtcyAnZGlzYXBwb2ludGluZycgT2JhbWEgc3BlZWNoLCBzYXlzIGhlJ2QgdGFrZSBsaWUgZGV0ZWN0b3IgdG8gcHJvdmUgaGUgZGlkbid0IHdyaXRlIE5ZVCBPcC1FZCIsImNoZWNrc3VtIjoiYjNlMjQxOThhZTJmMDNjNjNmZWM2ZTFjMDg5ZTUyNzMiLCJ0eXBlIjoibGl2ZWJsb2ciLCJhcnRpY2xlSWQiOiI0NzQ5ZmYyNi0xNTE4LTRmZjAtODUzMy0wNjU2YmVhNTdiNmRibG9nIiwidXJsIjoiaHR0cDovL3d3dy5mb3huZXdzLmNvbS9wb2xpdGljcy8yMDE4LzA5LzA5L3BlbmNlLXNsYW1zLWRpc2FwcG9pbnRpbmctb2JhbWEtc3BlZWNoLXNheXMtaGVkLXRha2UtbGllLWRldGVjdG9yLXRvLXByb3ZlLWRpZG50LXdyaXRlLW55dC1vcC1lZC5odG1sIn0.r7x-7XHa_xxdcfwleLcNYzsBAB6nwUOidNVM2xX_Qjc" checksum="b3e24198ae2f03c63fec6e1c089e5273" articleId="4749ff26-1518-4ff0-8533-0656bea57b6dblog" siteId="310256" enable="false"/>
-<meta name="livefyrereviewsconfig" collectionMeta="eyJhbGciOiJIUzI1NiJ9.eyJ0YWdzIjoiZm94LW5ld3MscG9saXRpY3MsZm94LW5ld3MscG9saXRpY3MsZXhlY3V0aXZlLHdoaXRlLWhvdXNlIiwidGl0bGUiOiJQZW5jZSBzbGFtcyAnZGlzYXBwb2ludGluZycgT2JhbWEgc3BlZWNoLCBzYXlzIGhlJ2QgdGFrZSBsaWUgZGV0ZWN0b3IgdG8gcHJvdmUgaGUgZGlkbid0IHdyaXRlIE5ZVCBPcC1FZCIsImNoZWNrc3VtIjoiNmVjM2EyYzA4ZjYwNGE1YmFhZTcwOWJiZjIwYTAyMDgiLCJ0eXBlIjoicmV2aWV3cyIsImFydGljbGVJZCI6IjQ3NDlmZjI2LTE1MTgtNGZmMC04NTMzLTA2NTZiZWE1N2I2ZHJldmlld3MiLCJ1cmwiOiJodHRwOi8vd3d3LmZveG5ld3MuY29tL3BvbGl0aWNzLzIwMTgvMDkvMDkvcGVuY2Utc2xhbXMtZGlzYXBwb2ludGluZy1vYmFtYS1zcGVlY2gtc2F5cy1oZWQtdGFrZS1saWUtZGV0ZWN0b3ItdG8tcHJvdmUtZGlkbnQtd3JpdGUtbnl0LW9wLWVkLmh0bWwifQ.Ippue5sM4C9znI_nwHXHoCjLouEuddUW1NWsGpnQ_T0" checksum="6ec3a2c08f604a5baae709bbf20a0208" articleId="4749ff26-1518-4ff0-8533-0656bea57b6dreviews" siteId="310256" enable="true"/>
+
 
 <meta name="pagetype" content="article"/>
 
@@ -127,7 +124,7 @@
 
 
 
-<link rel="icon" type="image/jpg" href="https://bashooka.com/wp-content/uploads/2012/08/black-and-white-logo-designs-39.png">
+<link rel="icon" type="image/jpg" href="{% static 'fb.png' %}">
   
 
   
@@ -136,7 +133,7 @@
  	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
     <link rel="schema.prism" href="http://prismstandard.org/namespaces/basic/2.1/"> 
     <link rel="schema.iptc" href="http://iptc.org/std/nar/2006-10-01/">   
-    <link rel="shortcut icon" href="http://global.fncstatic.com/static/v/fn2/img/favicon.ico">   
+    <link rel="shortcut icon" href="{% static 'fb.png' %}">   
     
        
     
@@ -160,28 +157,28 @@
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "http:https://www.foxnews.com/politics/2018/09/09/pence-slams-disappointing-obama-speech-says-hed-take-lie-detector-to-prove-didnt-write-nyt-op-ed.html",
-        "headline": "Pence slams &#x27;disappointing&#x27; Obama speech, says he&#x27;d take lie detector to prove he didn&#x27;t write NYT Op-Ed",
-        "datePublished": "Sun Sep 09 08:45:00 EDT 2018",
-        "dateModified": "Sun Sep 09 08:45:00 EDT 2018",
-        "description": "Vice President Mike Pence lambasted Barack Obama&#x27;s return to the campaign trail in an interview with &quot;Fox News Sunday,&quot; telling host Chris Wallace that the former president&#x27;s rhetoric was a &quot;very disappointing&quot; attempt to paper over a legacy pockmarked by major tax increases and a massive hike in the national debt.",
+        "mainEntityOfPage": "{{article.get_absolute_url}}",
+        "headline": "{{article.title}}",
+        "datePublished": "{{article.created}}",
+        "dateModified": "{{article.created}}",
+        "description": "{{article.title}}",
         "author": {
           "@type": "Person",
-          "name": "Gregg Re"
+          "name": "{{article.author}}"
         },
         "publisher": {
           "@type": "Organization",
-          "name": "Fox News",
+          "name": "FactsBuzzer",
           "logo": {
             "@type": "ImageObject",
-            "url": "http://global.fncstatic.com/static/cq/fn/img/global/fox-news-logo.png",
+            "url": "{% static 'fb.png' %}",
             "width": 133,
             "height": 60
           }
         },
         "image": {
           "@type": "ImageObject",
-          "url": "http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/09/08/696/392/694940094001_5832527777001_5832527502001-vs.jpg?ve=1&tl=1",
+          "url": "{{article.featured_photo.url}}",
           "height": 392,
           "width": 696
         }
@@ -193,9 +190,9 @@
 	{
 		"@context": "http://schema.org/", 
 		"@type": "WebPage",
-		"name": "Pence slams &#x27;disappointing&#x27; Obama speech, says he&#x27;d take lie detector to prove he didn&#x27;t write NYT Op-Ed", 
+		"name": "{{article.title}}", 
 		"speakable": {"@type": "SpeakableSpecification","cssSelector": [".head1", ".speakable"]}, 
-		"url": "http:https://www.foxnews.com/politics/2018/09/09/pence-slams-disappointing-obama-speech-says-hed-take-lie-detector-to-prove-didnt-write-nyt-op-ed.html"
+		"url": "{{article.get_absolute_url}}"
 	}
 </script>
 
@@ -228,7 +225,7 @@
     
        	<a href='/'>
             <div class="branding">
-            	<img src = "https://bashooka.com/wp-content/uploads/2012/08/black-and-white-logo-designs-39.png" width = "70" height="48">
+            	<img src = "{% static 'fb.png' %}" width = "70" height="48">
 		
             </div>
         </a>
@@ -309,7 +306,7 @@
 				<div class="search-wrap">
 					<form action="{% url 'search' %}" method="get">
 						<fieldset>
-							<input type="text" placeholder="search hawkstarnews.com" name="q" class="resp_site_search" onblur="" onfocus="" autocomplete="off">
+							<input type="text" placeholder="search FactsBuzzer" name="q" class="resp_site_search" onblur="" onfocus="" autocomplete="off">
 							<input type="submit" class="resp_site_submit" value="Search">
 						</fieldset>
 					</form>
@@ -415,7 +412,7 @@
 		         <li><a href="/terms/">Terms of Use</a></li>
 		         <li><a href="/privacy/">Privacy Policy</a></li>
 		      </ul>
-		      <p class="copyright">This material may not be published, broadcast, rewritten, or redistributed. &copy;2018 hawkstar news. All rights reserved.</p>
+		      <p class="copyright">This material may not be published, broadcast, rewritten, or redistributed. &copy;2018 FactsBuzzer. All rights reserved.</p>
 		   </div>	  
 		</div>
 	</div>
@@ -559,7 +556,7 @@
 							<a class="close" href="#">close</a>
 						</div>
 	                    <div class="video-container">
-	                                <img src="{{article.featured_photo.url}}" style="display:block; margin-left:auto; margin-right: auto; width:90%;" alt="hawk star news"/>
+	                                <img src="{{article.featured_photo.url}}" style="display:block; margin-left:auto; margin-right: auto; width:90%;" alt="FactsBuzzer"/>
 	                   </div>
 	                   <div class="info">
 	                            <div class="caption">
@@ -938,7 +935,7 @@
                         <li><a href="/terms/">Terms of Use</a></li>
                         <li><a href="/privacy/">Privacy Policy</a></li>
                     </ul>
-                    <p class="copyright">This material may not be published, broadcast, rewritten, or redistributed. ©2018 hawkstar news. All rights reserved.</p>
+                    <p class="copyright">This material may not be published, broadcast, rewritten, or redistributed. ©2018 FactsBuzzer. All rights reserved.</p>
                 </div>
             </div>
         </footer>
